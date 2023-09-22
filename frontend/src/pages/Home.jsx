@@ -19,15 +19,6 @@ export default function Home() {
           backgroundClip: "text",
           color: "transparent",
         }}
-        // {
-        //   background: linear-gradient(109.57deg, #028c8c 18.12%, #025951 103.53%);
-        //   /* You'll need this to apply the gradient to the text only */
-        //   background-clip: text;
-        //   color: transparent;
-        //   /* Use this to make sure the text is smooth */
-        //   -webkit-background-clip: text;
-        //   -webkit-text-fill-color: transparent;
-        // }
       >
         Road Racing Shoes
       </Typography>

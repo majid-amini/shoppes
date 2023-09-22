@@ -4,14 +4,19 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
+
 const Header = () => {
   return (
     <div>
       <div className="mobile">
-        <Box sx={{ flexGrow: 1}}>
-          <AppBar position="static">
+        <Box sx={{ flexGrow: 1 }}>
+          <AppBar position="static" sx={{ backgroundColor: "white" }}>
             <Toolbar>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, color: "black" }}
+              >
                 Shoppes
               </Typography>
               <IconButton
@@ -19,7 +24,6 @@ const Header = () => {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                // sx={{ mr: 2 }}
               >
                 <img src="/images/menu.png" alt="menu-icon" />
               </IconButton>
