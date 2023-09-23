@@ -10,12 +10,15 @@ const Header = () => {
     <div>
       <div className="mobile">
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static" sx={{ backgroundColor: "white" }}>
+          <AppBar
+            position="static"
+            sx={{ backgroundColor: "white", boxShadow: "none" }}
+          >
             <Toolbar>
               <Typography
                 variant="h6"
                 component="div"
-                sx={{ flexGrow: 1, color: "black" }}
+                sx={{ flexGrow: 1, color: "black", fontWeight: "bold" }}
               >
                 Shoppes
               </Typography>

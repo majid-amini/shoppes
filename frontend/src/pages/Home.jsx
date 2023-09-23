@@ -10,7 +10,7 @@ export default function Home() {
         component="div"
         sx={{
           flexGrow: 1,
-          fontWeight: "700",
+          fontWeight: "bold",
           marginTop: "50px",
           padding: "0 10px",
           fontSize: "16px",
