@@ -1,7 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 export default function Home() {
+  const styles = {
+    paperContainer: {
+      backgroundImage: `url(${"./images/Bg.png"})`,
+      backgroundPosition: "right",
+      backgroundSize: "50%",
+      backgroundRepeat: "no-repeat",
+    },
+  };
   return (
     <div>
       <Header />
@@ -35,6 +43,15 @@ export default function Home() {
       >
         Nike ZoomX<br></br> Streakfly
       </Typography>
+      <Box position={"relative"} style={styles.paperContainer}>
+        <img src="./images/Image.png" style={{ width: "100%" }} alt="" />
+        <div style={{display:"flex",width:"100%",justifyContent:"space-around"}}>
+          <img style={{width:"70px"}} src="./images/Image (1).png" alt="" />
+          <img style={{width:"70px"}} src="./images/Image (2).png" alt="" />
+          <img style={{width:"70px"}} src="./images/Image (3).png" alt="" />
+          <img style={{width:"70px"}} src="./images/Image (4).png" alt="" />
+        </div>
+      </Box>
     </div>
   );
 }
