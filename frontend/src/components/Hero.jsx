@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Select,
+  Button,
+  FormControl,
+  InputLabel,
+  MenuItem,
+} from "@mui/material";
 
 export default function Hero() {
   const styles = {
@@ -73,6 +81,89 @@ export default function Hero() {
         Our lightest racing shoe, the Nike ZoomX Streakfly is all about the
         speed you need to take on the competition in a mile, 5K or 10K race.
       </Typography>
+
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 2,
+        }}
+      >
+        <FormControl sx={{ width: "100px" }}>
+          <InputLabel
+            id="demo-simple-select-label"
+            sx={{ color: "#100D22", fontWeight: "bold" }}
+          >
+            QNT
+          </InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            label="QNT"
+          ></Select>
+        </FormControl>
+
+        <FormControl sx={{ width: "100px" }}>
+          <InputLabel
+            id="demo-simple-select-label"
+            sx={{ color: "#100D22", fontWeight: "bold" }}
+          >
+            SIZE
+          </InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            label="SIZE"
+          ></Select>
+        </FormControl>
+
+        {/* <select
+          style={{
+            padding: ".5rem",
+            fontSize: "1rem",
+            color: "#100D22",
+            fontWeight: "bold",
+            // border: "1px solid ",
+            background:
+              "linear-gradient(142.07deg, #AB238F 0.94%, #DF3295 34.4%, #FE9D9B 71.35%, #FF7770 100.91%);",
+          }}
+        >
+          <option selected>test</option>
+        </select> */}
+
+        <Typography
+          variant="p"
+          sx={{ color: "#100D22", fontSize: "2rem", fontWeight: "bold" }}
+        >
+          $173
+        </Typography>
+      </Box>
+
+      <Box
+        sx={{
+          padding: 2,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 2,
+        }}
+      >
+        <Button
+          sx={{
+            backgroundColor: "#100D22",
+            color: "white",
+            borderRadius: "2rem",
+            textTransform: "none",
+            padding: "1rem 3rem",
+          }}
+        >
+          Add to Bag
+        </Button>
+        <Typography sx={{ color: "#100D22", textDecoration: "underline" }}>
+          See Details
+        </Typography>
+      </Box>
     </div>
   );
 }
